@@ -28,7 +28,7 @@ Time spent: `<Number of hours spent>`
 - [X] User can load more tweets once they reach the bottom of the feed using infinite loading similar to the actual Twitter client.
 
 #### My Tweak
-- [X] Added a Side Play button for Tweets. When clicked, it lets you play through the last 20 tweets from the author.
+- [X] Added a Play button for Tweets. When clicked, it lets you play through the last 20 tweets from the author in the same row, without leaving the screen! I've illustrated it for one of the rows, though it's simple to extend it if the UX makes sense.
 
 ### Walkthrough
 
