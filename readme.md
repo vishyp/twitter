@@ -32,4 +32,4 @@ Time spent: `12 hours`
 
 ### Walkthrough
 
-![Video Walkthrough](TweetsVishy.gif)
+![Video Walkthrough](TwitterPlusMinusVishy.gif)
