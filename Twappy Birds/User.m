@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  User.m
 //  Twappy Birds
 //
 //  Created by Vishy Poosala on 10/27/14.
 //  Copyright (c) 2014 Vi Po. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "User.h"
 
-@interface ViewController : UIViewController
-
+@implementation User
 
 @end
-
