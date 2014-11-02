@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewTweetController : UIViewController
+@interface NewTweetController : UIViewController  <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *userImage;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *handle;
+@property (weak, nonatomic) IBOutlet UITextField *tweetField;
+@property (weak, nonatomic) NSString *replyHandle;
+@property (weak, nonatomic) IBOutlet UILabel *lengthLabel;
 
 @end

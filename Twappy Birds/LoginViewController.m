@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+#import "TwitterClient.h"
+#import "TweetsViewController.h"
 
 @interface LoginViewController ()
 
@@ -22,6 +24,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)onLogin:(id)sender {
+    [[TwitterClient sharedInstance] loginWithCompletion:^(User *user, NSError *error) {
+        if (user != nil) {
+            // modally present the tweets
+            NSLog(@"welcome to %@", user.name);
+            UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:[[TweetsViewController alloc] init]];
+
+            [self presentViewController:nvc animated:YES completion:nil];
+        } else {
+            // present the error view
+        }
+    }];
 }
 
 /*
